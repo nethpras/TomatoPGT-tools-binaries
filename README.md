@@ -30,11 +30,12 @@ CloudGraph (Phenotypes)	*_graph.json	*_phenotypes.csv	Trait computation
 ⚙️ Installation
 System Requirements
 
-Windows 10 / 11 (64-bit)
-
-Python 3.11 (64-bit CPython)
-
-Open3D 0.19.0
+Windows 11 (64-bit)
+Python 3.11 [1]
+Open3D [2]
+NumPy [3]
+SciPy [4] 
+scikit-learn [5]
 
 1️⃣ Create Environment
 conda create -n TomatoPGT python=3.11 -y
@@ -250,3 +251,15 @@ pip uninstall cloudseg cloudgraph
 
 MIT License
 See LICENSE file.
+
+## References
+
+[1] Python Software Foundation, “Python Language Reference (Version 3.11.x).” Available: https://www.python.org
+
+[2] Q.-Y. Zhou, J. Park, and V. Koltun, “Open3D: A Modern Library for 3D Data Processing,” *arXiv:1801.09847*, 2018.
+
+[3] C. R. Harris *et al*., “Array programming with NumPy,” *Nature*, vol. 585, pp. 357–362, 2020.
+
+[4] P. Virtanen *et al*., “SciPy 1.0: Fundamental algorithms for scientific computing in Python,” *Nature Methods*, vol. 17, pp. 261–272, 2020.
+
+[5] F. Pedregosa *et al*., “Scikit-learn: Machine Learning in Python,” *Journal of Machine Learning Research*, vol. 12, pp. 2825–2830, 2011.
