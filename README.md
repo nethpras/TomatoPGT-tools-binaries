@@ -94,12 +94,6 @@ Child → Region selection and cropping
 
 ## 🧭 Annotation Workflow
 
-| **Step 1 — Load Point Cloud**                 | **Step 2 — Adjust View**                                                                                                                        | **Step 3 — Set Class + Instance**                                                                                               | **Step 4 — Select Region**                                                                                                                                                                                               | **Step 5 — Verify**                                                                |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| Click **Open Cloud…** and load a `.ply` file. | **Open3D Controls:**<br>• Mouse wheel → Zoom<br>• Drag → Rotate<br>• Pan → Reposition<br><br>⚠ View may require manual adjustment after redraw. | Before selecting:<br>• Choose structural class<br>• Set correct instance ID<br><br>⚠ Critical for correct graph reconstruction. | Click **Select Region…**<br><br>Inside child window:<br>• Press **K** → Activate selection<br>• Ctrl + Left Click → Polygon selection<br>• Drag → Rectangle selection<br>• Press **C** → Crop<br>• Press **Q** → Confirm | Selected region appears in palette color.<br><br>If incorrect:<br>• Undo<br>• Redo |
-
-## Annotation Workflow Steps
-
 | **Step** | **Description** | **Controls / Notes** |
 |---------|------------------|-----------------------|
 | **Step 1 — Load Point Cloud** | Click **Open Cloud…** and load a `.ply` file. | — |
@@ -170,7 +164,7 @@ If the annotation breaks stem continuity, mixes attachment organs, or omits majo
 
 ---
 
-## How the GUI Works (Parent–Child Workflow)
+## How the GUI Works 
 
 CloudSeg uses two windows:
 
