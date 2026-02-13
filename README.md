@@ -98,7 +98,7 @@ Annotated .txt exported from CloudSeg
 Never load raw .ply.
 
 Tab 1 — Inspect
-<p align="center"> <img src="figures/images/CloudGraph_gui.png" width="80%"> </p>
+<p align="center"> <img src="figures/images/cloudgraph_gui_inspect.png" width="50%"> </p>
 
 Used to:
 
@@ -111,7 +111,7 @@ Adjust point size
 Reset camera
 
 Tab 2 — Graph Extraction
-<p align="center"> <img src="figures/images/cloudgraph_gui_control_graph_extraction.png" width="80%"> </p>
+<p align="center"> <img src="figures/images/cloudgraph_gui_control_graph_extraction.png" width="50%"> </p>
 
 Workflow:
 
@@ -125,8 +125,16 @@ Open Graph Viewer
 
 
 Tab 3 — Phenotypes
-<p align="center"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="80%"> </p>
+<p align="center"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="50%"> </p>
+<p align="right"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="50%"> </p>
 
+<p align="center">
+  <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png"" width="50%">
+</p>
+
+<p align="center">
+  <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="50%">
+</p>
 Workflow:
 
 Select units (default: cm)
