@@ -169,13 +169,12 @@ Click Compute Phenotypes
 Export *_phenotypes.csv
 
 🎞 Graph Extraction  and Phenotype Visual Animation
-<p align="center"> <img src="figures/gifs/phg.gif" width="80%"> </p>
 
 <table>
   <tr>
     <td align="center">
         <h4>clodgraph Graph Extraction</h4>
-        <img src="figures/gifs/phg.gif" alt="Image 1">
+        <img src="figures/gifs/cgg.gif" alt="Image 1">
     </td>
     <td align="center">
         <h4>clodgraph Phenotype Extraction</h4>
@@ -183,14 +182,6 @@ Export *_phenotypes.csv
     </td>
   </tr>
 </table>
-
-
-
-|  |  |
-|---|---|
-| <img src="img src="figures/gifs/gh_1.mp4" width="80%"> | <img src="figures/gifs/CloudGraph_Phenotype.gif" width="80%"> |
-
-*Left: Control tab (Graph)* | *Right: Control tab (Phenotype)*
 
 </div>
 
