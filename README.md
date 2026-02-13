@@ -1,9 +1,9 @@
-## 🌿 TomatoPGT Tools — CloudSeg + CloudGraph
+# 🌿 TomatoPGT Tools — CloudSeg + CloudGraph
 
 Organ-Level Digital Twin Modeling from 3D Tomato Plant Point Clouds
 <p align="center"> <img src="figures/images/TomatoPGT_Pipeline.png" width="95%"> </p>
 
-🔬 Overview
+## 🔬 Overview
 
 TomatoPGT Tools provide a reproducible pipeline for transforming raw 3D tomato plant point clouds into:
 
@@ -13,21 +13,36 @@ TomatoPGT Tools provide a reproducible pipeline for transforming raw 3D tomato p
 
 📊 Quantitative phenotypic traits
 
-🧠 Digital twin representations
 
 These tools were developed to support the TomatoPGT Data in Brief publication and enable reproducible structural annotation, semantic graph extraction, and phenotype computation.
 
-Tool	Purpose	Output
-CloudSeg	Manual structural annotation of raw .ply point clouds	Annotated .txt
-CloudGraph	Semantic graph extraction + phenotype computation	*_graph.json, *_phenotypes.csv
-Digital Twin Pipeline
+Raw Point Cloud (.ply)
+        ↓
+CloudSeg Annotation
+        ↓
+Annotated Structure (.txt)
+        ↓
+CloudGraph Graph Extraction
+        ↓
+Semantic Graph (.json)
+        ↓
+CloudGraph Phenotypes
+        ↓
+Traits Table (.csv)
 
-📦 Tools
-Tool	Input	Output	Purpose
-CloudSeg	.ply	Annotated .txt	Manual structural labeling
-CloudGraph (Graph)	Annotated .txt	*_graph.json	Semantic graph construction
-CloudGraph (Phenotypes)	*_graph.json	*_phenotypes.csv	Trait computation
-⚙️ Installation
+
+
+## 📦 Tools
+| Tool                        | Input            | Output             | Purpose                     |
+| --------------------------- | ---------------- | ------------------ | --------------------------- |
+| **CloudSeg**                | `.ply`           | Annotated `.txt`   | Manual structural labeling  |
+| **CloudGraph (Graph)**      | Annotated `.txt` | `*_graph.json`     | Semantic graph construction |
+| **CloudGraph (Phenotypes)** | `*_graph.json`   | `*_phenotypes.csv` | Trait computation           |
+
+
+## ⚡️ Quick Start
+
+### ⚙️ Installation
 System Requirements
 
 Windows 11 (64-bit)
@@ -38,31 +53,30 @@ SciPy [4]
 scikit-learn [5]
 
 1️⃣ Create Environment
+
+````sh
+
 conda create -n TomatoPGT python=3.11 -y
 conda activate TomatoPGT
 python -m pip install -U pip
 pip install open3d==0.19.0 numpy scipy pandas scikit-learn
+````
 
 2️⃣ Install Tools
+
+````sh
 pip install wheels/cloudseg-1.0.0-cp311-cp311-win_amd64.whl
 pip install wheels/cloudgraph-1.0.0-cp311-cp311-win_amd64.whl
+````
 
 3️⃣ Run
+
+````python
 python -m cloudseg.runner
 python -m cloudgraph.runner
+````
 
-📂 Sample Data
-
-You should now add data to the tools:
-
-sample_dataset/
-  Data_cSeg_Raw/
-    BFS_R_05082025.ply
-  Data_cGraph_Annotated
-    BFS_05082025_annotated_ext.txt`
-
-
-## 🧪 Sample Dataset
+## 📂 Sample Dataset
 
 A minimal dataset is provided in `sample_dataset/` to test the full pipeline:
 
@@ -72,7 +86,7 @@ A minimal dataset is provided in `sample_dataset/` to test the full pipeline:
 4. Generate graph and phenotypes
 
 
-🌿 CloudSeg — Structural Annotation
+## 🌿 CloudSeg — Structural Annotation
 Input
 Raw .ply point cloud only
 
@@ -93,7 +107,7 @@ Parent → Full plant view
 
 Child → Region selection and cropping
 
-🧭 Annotation Workflow
+## 🧭 Annotation Workflow
 
 | **Step 1 — Load Point Cloud**                 | **Step 2 — Adjust View**                                                                                                                        | **Step 3 — Set Class + Instance**                                                                                               | **Step 4 — Select Region**                                                                                                                                                                                               | **Step 5 — Verify**                                                                |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
@@ -114,7 +128,7 @@ Structural Schema for Annotation workflow:
 | **Stalk-Seg**           | Petiole (Junction node to Compound Leaf)        | —                                   |
 | **Sucker-Seg**          | Sucker / Branch / Axil                          | —                                   |
 
-🌳 CloudGraph — Semantic Graph Extraction
+## 🌳 CloudGraph — Semantic Graph Extraction
 Input
 Annotated .txt file from CloudSeg
 
@@ -153,7 +167,7 @@ Confirm *_graph.json
 
 </div>
 
-🌱 CloudGraph — Phenotypes
+## 🌱 CloudGraph — Phenotypes
 Input
 *_graph.json
 
@@ -185,8 +199,7 @@ Export *_phenotypes.csv
 
 </div>
 
-🌱 Computed Traits
-📊 Phenotypes Generated by CloudGraph
+
 ## 📊 Computed Traits
 
 | Category | Description |
@@ -197,7 +210,7 @@ Export *_phenotypes.csv
 | **Leaf Insertion Angles** | Angular orientation between main stem and Compound Leaf attachment |
 | **Sucker Orientation** | Direction and angle of lateral vegetative shoots |
 
-🔄 Recommended Workflow
+
 ## 🔄 Recommended Workflow
 
 | Step | Action | Tool |
@@ -210,7 +223,7 @@ Export *_phenotypes.csv
 | 6 | Validate topology in Graph Viewer | CloudGraph |
 | 7 | Compute phenotypes (`*_phenotypes.csv`) | **Phenotypes tab** |
 
-🧪 Troubleshooting
+
 ## 🧪 Troubleshooting
 
 | Issue | Possible Cause | Recommended Fix |
