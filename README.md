@@ -1,6 +1,6 @@
 # 🌿 TomatoPGT Tools — CloudSeg + CloudGraph
 
-Organ-Level Digital Twin Modeling from 3D Tomato Plant Point Clouds
+###     Organ-Level Digital Twin Modeling from 3D Tomato Plant Point Clouds
 <p align="center"> <img src="figures/images/TomatoPGT_Pipeline.png" width="95%"> </p>
 
 ## 🔬 Overview
@@ -65,9 +65,9 @@ python -m cloudgraph.runner
 
 A minimal dataset is provided in `sample_dataset/` to test the full pipeline:
 
-1. Open `Data_cSeg_raw/BFS_R_05082025.ply` in CloudSeg
-2. Annotate with CloudSeg tool and save `BFS_05082025_annotated_ext.txt`
-3. Load into CloudGraph tool : `BFS_05082025_annotated_ext.txt`
+1. Open `Data_cSeg_raw/BFS_R_06242025.ply` in CloudSeg
+2. Annotate with CloudSeg tool and save `BFS_06242025_annotated_ext.txt`
+3. Load into CloudGraph tool : `BFS_06242025_annotated_ext.txt`
 4. Generate graph and phenotypes
 
 
@@ -81,7 +81,6 @@ CloudSeg will not load .txt or .json files.
 Output
 Annotated .txt file
 
-This file must follow the simplified structural schema.
 
 GUI Overview
 <p align="center"> <img src="figures/images/CloudSeg_GUI.png" width="85%"> </p>
