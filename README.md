@@ -1,4 +1,4 @@
-🌿 TomatoPGT Tools — CloudSeg + CloudGraph
+## 🌿 TomatoPGT Tools — CloudSeg + CloudGraph
 
 Organ-Level Digital Twin Modeling from 3D Tomato Plant Point Clouds
 <p align="center"> <img src="figures/images/TomatoPGT_Pipeline.png" width="95%"> </p>
@@ -137,9 +137,7 @@ Point size
 
 Camera reset
 
-Graph Tab
-<p align="center"> <img src="figures/images/cloudgraph_gui_control_graph_extraction.png" width="70%"> </p>
-Workflow
+Graph Tab Workflow
 
 Review parameters
 
@@ -162,22 +160,7 @@ Input
 Output
 *_phenotypes.csv
 
-Phenotype Tab
-<p align="center"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="70%"> </p>
-Workflow
-
-Select units (cm default)
-
-Click Compute Phenotypes
-
-Export CSV
-
-Open Phenotype Viewer
-
-
-
-
-Workflow:
+Phenotype Tab Workflow:
 
 Select units (default: cm)
 
