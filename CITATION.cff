@@ -7,8 +7,7 @@ authors:
   - family-names: "Nethala"
     given-names: "Prasad"
     email: "snethala@islander.tamucc.edu"
-    # Add your ORCID if you have one (recommended)
-    # orcid: "https://orcid.org/0000-0002-7489-2991"
+    orcid: "https://orcid.org/0000-0002-7489-2991"
     affiliation: "Texas A&M University–Corpus Christi"
 
 #repository-code: "https://github.com/nethpras/TomatoPGT-tools-binaries"
@@ -32,31 +31,12 @@ license: MIT
 # Put the release version tag you plan to publish on GitHub (and Zenodo)
 version: "1.0.0"
 date-released: "2026-02-12"
-
-# If you have a Zenodo DOI after you publish the release, add it here:
 # doi: "10.5281/zenodo.XXXXXXXX"
-
-# If Zenodo assigns a "concept DOI" (always points to latest), you can add it too:
 # identifiers:
 #   - type: doi
 #     value: "10.5281/zenodo.XXXXXXXX"
 #     description: "Zenodo concept DOI"
 
-# Helpful for users: how to run
-references:
-  - type: software
-    title: "Open3D: A Modern Library for 3D Data Processing"
-    authors:
-      - family-names: "Zhou"
-        given-names: "Qian-Yi"
-      - family-names: "Park"
-        given-names: "Jaesik"
-      - family-names: "Koltun"
-        given-names: "Vladlen"
-    year: 2018
-    url: "https://arxiv.org/abs/1801.09847"
-
-# OPTIONAL: If your Data in Brief article is published or has a DOI, add it here:
 # preferred-citation:
 #   type: article
 #   title: "<Your Data in Brief article title>"
