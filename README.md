@@ -1,101 +1,103 @@
-🌿 TomatoPGT Tools
-CloudSeg + CloudGraph (Binary Release)
-📌 Overview
+TomatoPGT Tools (Binary Release)
 
-TomatoPGT provides two GUI tools for creating organ-level digital twin representations of tomato plants from 3D point clouds.
+CloudSeg + CloudGraph
+Organ-Level Digital Twin Modeling from 3D Tomato Plant Point Clouds
+
+Overview
+
+TomatoPGT provides two Windows GUI tools for constructing organ-level digital twin representations of tomato plants from 3D point clouds.
+
+These tools were developed to support the TomatoPGT Data in Brief publication and enable reproducible structural annotation, semantic graph extraction, and phenotype computation.
 
 Tool	Purpose	Output
 CloudSeg	Manual structural annotation of raw .ply point clouds	Annotated .txt
 CloudGraph	Semantic graph extraction + phenotype computation	*_graph.json, *_phenotypes.csv
-
-These tools were developed for the TomatoPGT Data in Brief publication.
-
-📊 Visual Pipeline
-<p align="center"> <img src="figures/images/TomatoPGT_Pipeline.png
-" width="100%"> </p>
+Digital Twin Pipeline
+<p align="center"> <img src="figures/images/TomatoPGT_Pipeline.png" width="95%"> </p>
 
 Raw Point Cloud → Structural Annotation → Semantic Graph → Phenotypes → Digital Twin
 
-⚡ Quick Installation
-1️⃣ Create environment
+Installation
+System Requirements
+
+Windows 10 / 11 (64-bit)
+
+Python 3.11 (64-bit CPython)
+
+Open3D 0.19.0
+
+1. Create Environment
 conda create -n TomatoPGT python=3.11 -y
 conda activate TomatoPGT
 python -m pip install -U pip
 pip install open3d==0.19.0 numpy scipy pandas scikit-learn
 
-2️⃣ Install tools
-pip install wheels/cloudseg-1.0.0-cp311-cp311-win_amd64
-pip install wheels/cloudgraph-1.0.0-cp311-cp311-win_amd64
+2. Install Tools
+pip install wheels/cloudseg-1.0.0-cp311-cp311-win_amd64.whl
+pip install wheels/cloudgraph-1.0.0-cp311-cp311-win_amd64.whl
 
-3️⃣ Run
+3. Run Applications
 python -m cloudseg.runner
 python -m cloudgraph.runner
 
-🌿 CloudSeg — Annotation Tool
-📥 Input
+CloudSeg — Structural Annotation Tool
+Input
 
 Raw .ply point cloud only
 
-🖥 GUI Overview
-<p align="center"> <img src="figures/images/CloudSeg_GUI.png
-" width="80%"> </p>
+GUI Overview
+<p align="center"> <img src="figures/images/CloudSeg_GUI.png" width="80%"> </p>
 
-CloudSeg uses a Parent–Child workflow built on Open3D:
+CloudSeg implements a Parent–Child Open3D workflow:
 
-Parent window → full point cloud
+Parent Window → full point cloud
 
-Child window → region selection & cropping
+Child Window → region selection and cropping
 
-🔹 Step-by-Step Annotation Tutorial
-Step 1 — Load .ply
+Annotation Workflow
+Step 1 — Load Point Cloud
 
-Click Open Cloud…
+Click Open Cloud… and load a .ply file.
 
-Step 2 — Adjust View (Open3D behavior)
+Step 2 — Adjust View
 
-Use:
+Open3D Controls:
 
-Mouse wheel → zoom
+Mouse wheel → Zoom
 
-Drag → rotate
+Drag → Rotate
 
-Pan → reposition
+Pan → Reposition
 
-⚠ Camera may require manual re-centering after redraws (Open3D limitation).
+Note: View may require manual adjustment after redraw.
 
 Step 3 — Set Class + Instance
 
 Before selecting:
 
-Choose class from dropdown
+Choose structural class
 
 Set correct instance ID
 
-This is critical.
+This is critical for correct graph reconstruction.
 
 Step 4 — Select Region
 
 Click Select Region…
 
-Child window opens.
-
 Inside child window:
 
-Press K → activate selection
+Press K → Activate selection
 
-Select using:
+Ctrl + Left Click → Polygon selection
 
-Ctrl + Left Click → polygon selection
+Drag → Rectangle selection
 
-Drag → rectangle selection
+Press C → Crop
 
-Press C → crop
+Press Q → Confirm
 
-Press Q → confirm and return
-
-Step 5 — Verify Result
-
-Parent window updates.
+Step 5 — Verify
 
 Selected region appears in palette color.
 
@@ -105,8 +107,8 @@ Undo
 
 Redo
 
-🌱 Structural Schema (Important)
-<p align="center"> <img src="figures/cloudseg_schema.png" width="80%"> </p>
+Structural Schema
+<p align="center"> <img src="figures/images/cloudseg_schema.png" width="80%"> </p>
 
 Simplified topology:
 
@@ -122,51 +124,46 @@ Stalk-Seg
 
 Sucker-Seg
 
-This preserves topology while avoiding per-leaflet labeling.
+Common Annotation Errors
 
-⚠ Common Mistakes
-❌ Broken stem chain
+Broken stem chain
 
-Graph extraction will fail.
+Leaf and stalk mixed
 
-❌ Leaf and stalk mixed
+Duplicate instance IDs
 
-Wrong attachment geometry.
+Missing Root-Node
 
-❌ Duplicate instance IDs
+These will cause graph extraction failure.
 
-Graph ambiguity.
-
-❌ Missing root node
-
-Graph cannot initialize.
-
-🌳 CloudGraph — Graph Extraction + Phenotypes
-📥 Input Requirement
+CloudGraph — Graph Extraction & Phenotypes
+Input Requirement
 
 Must load:
 
-Annotated .txt exported from CloudSeg.
+Annotated .txt exported from CloudSeg
 
 Never load raw .ply.
 
-🔍 Tab 1 — Inspect
-<p align="center"> <img src="figures\images\CloudGraph_gui.png" width="80%"> </p>
+Tab 1 — Inspect
+<p align="center"> <img src="figures/images/CloudGraph_gui.png" width="80%"> </p>
 
-Use to:
+Used to:
 
 Validate annotation
 
-Switch color mode (Annotated / Original)
+Switch color mode
 
 Adjust point size
 
 Reset camera
 
-🌿 Tab 2 — Graph Extraction
-<p align="center"> <img src="figures\images\cloudgraph_gui_control_graph_extraction.png" width="80%"> </p>
+Tab 2 — Graph Extraction
+<p align="center"> <img src="figures/images/cloudgraph_gui_control_graph_extraction.png" width="80%"> </p>
 
-Review extraction parameters
+Workflow:
+
+Review parameters
 
 Click Extract Graph
 
@@ -174,24 +171,21 @@ Confirm *_graph.json saved
 
 Open Graph Viewer
 
-Viewer overlays:
+Graph Extraction Animation
+<p align="center"> <img src="figures/gifs/cloudgraph_graph_extraction.gif" width="80%"> </p>
+Tab 3 — Phenotypes
+<p align="center"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="80%"> </p>
 
-Nodes
-
-Edges (tubes)
-
-Bounding boxes
-
-Anchors
-
-🌱 Tab 3 — Phenotypes
-<p align="center"> <img src="figures\images\cloudgraph_gui_control_phenotype_extraction.png" width="80%"> </p>
+Workflow:
 
 Select units (default: cm)
 
 Click Compute Phenotypes
 
 Export *_phenotypes.csv
+
+Phenotype Visualization Animation
+<p align="center"> <img src="figures/gifs/cloudgraph_phenotype.gif" width="80%"> </p>
 
 Computed traits include:
 
@@ -205,48 +199,46 @@ Leaf insertion angles
 
 Sucker orientation
 
-🔄 Recommended Workflow
+Recommended Workflow
 
 Annotate plant in CloudSeg
 
 Export annotated .txt
 
-Load in CloudGraph
+Load into CloudGraph
 
 Inspect
 
 Extract graph
 
-Validate
+Validate topology
 
 Compute phenotypes
-![CloudGraph graph extraction](figures/gifs/cloudgraph_graph_extraction.gif)
-![CloudGraph phenotype extraction](figures/gifs/cloudgraph_phenotype.gif)
 
-🧪 Troubleshooting
+Troubleshooting
 
 If CloudGraph freezes:
 
-Check missing Root-Node
+Check for missing Root-Node
 
-Check broken junction chain
+Ensure continuous junction chain
 
-Check large number of -1 labels
+Verify instance IDs
 
-Verify instance IDs are consistent
+Minimize large -1 label regions
 
-📦 Uninstall
+Uninstall
 pip uninstall cloudseg cloudgraph
 
-📖 Citation
+Citation
 @article{TomatoPGT2026,
-  title   = {TomatoPGT: Organ-level structural annotations and graph-based phenotypes of tomato plants from 3D point clouds},
+  title   = {TomatoPGT: A 3D point cloud dataset of tomato plants for segmentation and plant-trait extraction},
   author  = {Nethala, Prasad et al.},
   journal = {Data in Brief},
   year    = {2026}
 }
 
-📜 License
+License
 
 MIT License
-See LICENSE file.
+See LICENSE file for details.
