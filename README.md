@@ -125,8 +125,8 @@ Open Graph Viewer
 
 
 Tab 3 — Phenotypes
-<p align="center"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="50%"> </p>
-<p align="right"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="50%"> </p>
+<p align="center"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="20%"> </p>
+<p align="right"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="20%"> </p>
 
 <p align="center">
   <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png"" width="50%">
@@ -135,6 +135,7 @@ Tab 3 — Phenotypes
 <p align="center">
   <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="50%">
 </p>
+
 Workflow:
 
 Select units (default: cm)
