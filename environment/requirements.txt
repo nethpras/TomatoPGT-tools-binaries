@@ -1,0 +1,5 @@
+numpy
+scipy
+scikit-learn
+pandas
+open3d==0.19.0

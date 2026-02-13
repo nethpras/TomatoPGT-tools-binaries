@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+message: "If you use these tools for TomatoPGT data annotation or graph extraction, please cite this software."
+title: "TomatoPGT Tools (Binary Release): CloudSeg + CloudGraph"
+type: software
+
+authors:
+  - family-names: "Nethala"
+    given-names: "Prasad"
+    email: "snethala@islander.tamucc.edu"
+    # Add your ORCID if you have one (recommended)
+    # orcid: "https://orcid.org/0000-0002-7489-2991"
+    affiliation: "Texas A&M University–Corpus Christi"
+
+#repository-code: "https://github.com/nethpras/TomatoPGT-tools-binaries"
+url: "https://github.com/nethpras/TomatoPGT-tools-binaries"
+abstract: >
+  Pre-built Windows wheels for two Open3D-based GUI tools used in the TomatoPGT pipeline:
+  CloudSeg for manual organ-level point-cloud annotation, and CloudGraph for semantic graph extraction
+  and phenotype/trait export from annotated point clouds.
+
+keywords:
+  - point clouds
+  - Open3D
+  - plant phenotyping
+  - tomato
+  - annotation
+  - graph extraction
+  - digital twin
+
+license: MIT
+
+# Put the release version tag you plan to publish on GitHub (and Zenodo)
+version: "1.0.0"
+date-released: "2026-02-12"
+
+# If you have a Zenodo DOI after you publish the release, add it here:
+# doi: "10.5281/zenodo.XXXXXXXX"
+
+# If Zenodo assigns a "concept DOI" (always points to latest), you can add it too:
+# identifiers:
+#   - type: doi
+#     value: "10.5281/zenodo.XXXXXXXX"
+#     description: "Zenodo concept DOI"
+
+# Helpful for users: how to run
+references:
+  - type: software
+    title: "Open3D: A Modern Library for 3D Data Processing"
+    authors:
+      - family-names: "Zhou"
+        given-names: "Qian-Yi"
+      - family-names: "Park"
+        given-names: "Jaesik"
+      - family-names: "Koltun"
+        given-names: "Vladlen"
+    year: 2018
+    url: "https://arxiv.org/abs/1801.09847"
+
+# OPTIONAL: If your Data in Brief article is published or has a DOI, add it here:
+# preferred-citation:
+#   type: article
+#   title: "<Your Data in Brief article title>"
+#   authors:
+#     - family-names: "Nethala"
+#       given-names: "Prasad"
+#   year: 2026
+#   doi: "<ARTICLE_DOI>"
