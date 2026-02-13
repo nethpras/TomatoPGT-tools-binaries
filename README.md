@@ -174,11 +174,11 @@ Export *_phenotypes.csv
 <div align="center">
 
 🎞 Phenotype Visualization Animation
-<p align="center"> <img src="figures/gifs/CloudGraph_Phenotype.gif" width="80%"> </p>
+<p align="center"> <img src="figures/gifs/ph_1.mp4" width="80%"> </p>
 
 |  |  |
 |---|---|
-| <img src="img src="figures/gifs/cloudgraph_extraction.gif" width="80%"> | <img src="figures/gifs/CloudGraph_Phenotype.gif" width="80%"> |
+| <img src="img src="figures/gifs/gh_1.mp4" width="80%"> | <img src="figures/gifs/CloudGraph_Phenotype.gif" width="80%"> |
 
 *Left: Control tab (Graph)* | *Right: Control tab (Phenotype)*
 
