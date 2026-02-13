@@ -442,14 +442,15 @@ Export *_phenotypes.csv
   <tr>
     <td align="center">
         <h4>clodgraph Graph Extraction</h4>
-        <img src="figures/gifs/cgg_e.gif" alt="Image 1">
+        <img src="figures/gifs/cgg_e.gif" width="350px" alt="Graph Extraction GIF">
     </td>
     <td align="center">
         <h4>clodgraph Phenotype Extraction</h4>
-        <img src="figures/gifs/phg.gif" alt="Image 2">
+        <img src="figures/gifs/phg.gif" width="350px" alt="Phenotype Extraction GIF">
     </td>
   </tr>
 </table>
+``
 
 </div>
 
