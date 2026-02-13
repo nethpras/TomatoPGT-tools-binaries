@@ -174,7 +174,7 @@ Export *_phenotypes.csv
   <tr>
     <td align="center">
         <h4>clodgraph Graph Extraction</h4>
-        <img src="figures/gifs/cgg.gif" alt="Image 1">
+        <img src="figures/gifs/cgg_e.gif" alt="Image 1">
     </td>
     <td align="center">
         <h4>clodgraph Phenotype Extraction</h4>
