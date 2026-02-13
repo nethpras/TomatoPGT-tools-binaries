@@ -54,58 +54,10 @@ Parent Window → full point cloud
 
 Child Window → region selection and cropping
 
-Annotation Workflow
-Step 1 — Load Point Cloud
+| **Step 1 — Load Point Cloud**                 | **Step 2 — Adjust View**                                                                                                                        | **Step 3 — Set Class + Instance**                                                                                               | **Step 4 — Select Region**                                                                                                                                                                                               | **Step 5 — Verify**                                                                |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| Click **Open Cloud…** and load a `.ply` file. | **Open3D Controls:**<br>• Mouse wheel → Zoom<br>• Drag → Rotate<br>• Pan → Reposition<br><br>⚠ View may require manual adjustment after redraw. | Before selecting:<br>• Choose structural class<br>• Set correct instance ID<br><br>⚠ Critical for correct graph reconstruction. | Click **Select Region…**<br><br>Inside child window:<br>• Press **K** → Activate selection<br>• Ctrl + Left Click → Polygon selection<br>• Drag → Rectangle selection<br>• Press **C** → Crop<br>• Press **Q** → Confirm | Selected region appears in palette color.<br><br>If incorrect:<br>• Undo<br>• Redo |
 
-Click Open Cloud… and load a .ply file.
-
-Step 2 — Adjust View
-
-Open3D Controls:
-
-Mouse wheel → Zoom
-
-Drag → Rotate
-
-Pan → Reposition
-
-Note: View may require manual adjustment after redraw.
-
-Step 3 — Set Class + Instance
-
-Before selecting:
-
-Choose structural class
-
-Set correct instance ID
-
-This is critical for correct graph reconstruction.
-
-Step 4 — Select Region
-
-Click Select Region…
-
-Inside child window:
-
-Press K → Activate selection
-
-Ctrl + Left Click → Polygon selection
-
-Drag → Rectangle selection
-
-Press C → Crop
-
-Press Q → Confirm
-
-Step 5 — Verify
-
-Selected region appears in palette color.
-
-If incorrect:
-
-Undo
-
-Redo
 
 Structural Schema
 <p align="center"> <img src="figures/images/cloudseg_schema.png" width="80%"> </p>
@@ -171,8 +123,7 @@ Confirm *_graph.json saved
 
 Open Graph Viewer
 
-Graph Extraction Animation
-<p align="center"> <img src="figures/gifs/cloudgraph_graph_extraction.gif" width="80%"> </p>
+
 Tab 3 — Phenotypes
 <p align="center"> <img src="figures/images/cloudgraph_gui_control_phenotype_extraction.png" width="80%"> </p>
 
@@ -184,8 +135,15 @@ Click Compute Phenotypes
 
 Export *_phenotypes.csv
 
-Phenotype Visualization Animation
-<p align="center"> <img src="figures/gifs/cloudgraph_phenotype.gif" width="80%"> </p>
+Graph Extraction and Phenotype Visualization Animation
+<p align="center">
+  <img src="figures/gifs/cloudgraph_extraction.gif" width="80%">
+</p>
+
+<p align="center">
+  <img src="figures/gifs/CloudGraph_Phenotype.gif" width="80%">
+</p>
+
 
 Computed traits include:
 
