@@ -98,6 +98,16 @@ Child → Region selection and cropping
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
 | Click **Open Cloud…** and load a `.ply` file. | **Open3D Controls:**<br>• Mouse wheel → Zoom<br>• Drag → Rotate<br>• Pan → Reposition<br><br>⚠ View may require manual adjustment after redraw. | Before selecting:<br>• Choose structural class<br>• Set correct instance ID<br><br>⚠ Critical for correct graph reconstruction. | Click **Select Region…**<br><br>Inside child window:<br>• Press **K** → Activate selection<br>• Ctrl + Left Click → Polygon selection<br>• Drag → Rectangle selection<br>• Press **C** → Crop<br>• Press **Q** → Confirm | Selected region appears in palette color.<br><br>If incorrect:<br>• Undo<br>• Redo |
 
+## Annotation Workflow Steps
+
+| **Step** | **Description** | **Controls / Notes** |
+|---------|------------------|-----------------------|
+| **Step 1 — Load Point Cloud** | Click **Open Cloud…** and load a `.ply` file. | — |
+| **Step 2 — Adjust View** | Manipulate the 3D view using Open3D controls. | • Mouse wheel → Zoom<br>• Drag → Rotate<br>• Pan → Reposition<br><br>⚠ View may require manual adjustment after redraw. |
+| **Step 3 — Set Class + Instance** | Choose the structural class and assign the correct instance ID *before* making selections. | ⚠ Essential for correct graph reconstruction. |
+| **Step 4 — Select Region** | Click **Select Region…** and use tools inside the selection window. | • **K** → Activate selection<br>• **Ctrl + Left Click** → Polygon selection<br>• Drag → Rectangle selection<br>• **C** → Crop<br>• **Q** → Confirm |
+| **Step 5 — Verify** | The selected region appears in its palette color. | If incorrect:<br>• Undo<br>• Redo |
+
 
 Structural Schema for Annotation workflow:
 <p align="center"> <img src="figures/images/cloudseg_schema.png" width="80%"> </p>
@@ -112,6 +122,8 @@ Structural Schema for Annotation workflow:
 | **Compound Leaf-Node**  | Leaflets + Rachis                               | Missing Root-Node                   |
 | **Stalk-Seg**           | Petiole (Junction node to Compound Leaf)        | —                                   |
 | **Sucker-Seg**          | Sucker / Branch / Axil                          | —                                   |
+
+---
 
 ## CloudSeg — Detailed Usage Guide (Open3D-based Annotation GUI)
 
@@ -173,11 +185,11 @@ CloudSeg uses two windows:
 * Opens when you click **Select region…**
 * Shows only a subset of points:
 
-  * **Normal mode:** only **to-do** (unannotated) points
+  * **Normal mode:** only unannotated points
   * **Edit mode:** only **annotated** points (for correction / erase workflows)
 * Used for precise selection and cropping using **Open3D VisualizerWithEditing**
 
-> The child window is launched internally by CloudSeg. Users should not run it manually.
+> The child window is launched internally by CloudSeg.
 
 ---
 
@@ -224,7 +236,7 @@ Always confirm **Class + Instance** before pressing **Select region…**, becaus
 
 Click **Select region…** to open the child window.
 
-The child window typically shows a reduced set of points (usually to-do points), which makes it much easier to label dense plant regions without confusion.
+The child window typically shows a reduced set of points, which makes it much easier to label dense plant regions without confusion.
 
 ---
 
@@ -299,7 +311,7 @@ Autosave (if enabled) typically writes alongside the original `.ply` as:
 
 * **Fast annotation using Open3D-native selection**
 * **Parent–child workflow reduces visual clutter** during labeling
-* **To-do-driven annotation** simplifies completion tracking
+* **annotation** simplifies completion tracking
 * **Works well for occluded/overlapping organs** via iterative cropping
 * **Undo/Redo** enables repair without restarting
 
@@ -378,7 +390,7 @@ Autosave (if enabled) typically writes alongside the original `.ply` as:
 
 * Prefer polygon selection for complex zones.
 * Use multiple small crops rather than one large crop.
-* Rely on the “to-do-only child view” to progressively isolate remaining points.
+* Rely on the “child view” to progressively isolate remaining points.
 
 ---
 
