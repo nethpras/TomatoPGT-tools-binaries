@@ -36,6 +36,7 @@ Open3D [2]
 NumPy [3]
 SciPy [4] 
 scikit-learn [5]
+pandas [6]
 
 1️⃣ Create Environment
 
@@ -504,7 +505,7 @@ pip uninstall cloudseg cloudgraph
 MIT License
 See LICENSE file.
 
-## References
+## 🔗 Software dependencies
 
 [1] Python Software Foundation, “Python Language Reference (Version 3.11.x).” Available: https://www.python.org
 
@@ -515,3 +516,17 @@ See LICENSE file.
 [4] P. Virtanen *et al*., “SciPy 1.0: Fundamental algorithms for scientific computing in Python,” *Nature Methods*, vol. 17, pp. 261–272, 2020.
 
 [5] F. Pedregosa *et al*., “Scikit-learn: Machine Learning in Python,” *Journal of Machine Learning Research*, vol. 12, pp. 2825–2830, 2011.
+
+[6] The pandas development team. (2020). pandas-dev/pandas: Pandas (Version X.Y.Z) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.3509134
+
+## References
+
+[7] N. Chebrolu, T. Läbe and C. Stachniss,"Spatio-Temporal Non-Rigid Registration of 3D Point Clouds of Plants,"2020(ICRA), Paris, France, 2020, pp. 3112-3118, doi: 10.1109/ICRA40945.2020.9197569.
+
+[8] Van Marrewijk, B.M.; van Daalen, T.; Smoleňová, K.; Xin, B.; Polder, G.; Kootstra, G. TomatoWUR: An annotated dataset of tomato plants to quantitatively evaluate segmentation, skeletonisation, and plant-trait extraction algorithms for 3D plant phenotyping. Data Brief 2025, 61, 111852.
+
+[9] Meyer, Lukas, et al. "CherryPicker: Semantic skeletonization and topological reconstruction of cherry trees." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
+
+
+
+
