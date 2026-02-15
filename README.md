@@ -492,7 +492,13 @@ Export *_phenotypes.csv
 Uninstall
 pip uninstall cloudseg cloudgraph
 
+
 📖 Citation
+If you use these tools, please cite:
+
+Nethala, P. (2026). *TomatoPGT Tools (Binary Release): CloudSeg + CloudGraph*. Zenodo. https://doi.org/10.5281/zenodo.18651881
+
+IsSupplementTo
 @article{TomatoPGT2026,
   title   = {TomatoPGT: A 3D point cloud dataset of tomato plants for segmentation and plant-trait extraction},
   author  = {Nethala, Prasad et al.},
@@ -505,7 +511,7 @@ pip uninstall cloudseg cloudgraph
 MIT License
 See LICENSE file.
 
-## 🔗 Software dependencies
+## 🔗 Software dependencies and References
 
 [1] Python Software Foundation, “Python Language Reference (Version 3.11.x).” Available: https://www.python.org
 
@@ -519,11 +525,9 @@ See LICENSE file.
 
 [6] The pandas development team. (2020). pandas-dev/pandas: Pandas (Version X.Y.Z) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.3509134
 
-## References
+[7] N. Chebrolu,et al."Spatio-Temporal Non-Rigid Registration of 3D Point Clouds of Plants,"2020(ICRA), Paris, France, 2020, pp. 3112-3118, doi: 10.1109/ICRA40945.2020.9197569.
 
-[7] N. Chebrolu, T. Läbe and C. Stachniss,"Spatio-Temporal Non-Rigid Registration of 3D Point Clouds of Plants,"2020(ICRA), Paris, France, 2020, pp. 3112-3118, doi: 10.1109/ICRA40945.2020.9197569.
-
-[8] Van Marrewijk, B.M.; van Daalen, T.; Smoleňová, K.; Xin, B.; Polder, G.; Kootstra, G. TomatoWUR: An annotated dataset of tomato plants to quantitatively evaluate segmentation, skeletonisation, and plant-trait extraction algorithms for 3D plant phenotyping. Data Brief 2025, 61, 111852.
+[8] Van Marrewijk et al. TomatoWUR: An annotated dataset of tomato plants to quantitatively evaluate segmentation, skeletonisation, and plant-trait extraction algorithms for 3D plant phenotyping. Data Brief 2025, 61, 111852.
 
 [9] Meyer, Lukas, et al. "CherryPicker: Semantic skeletonization and topological reconstruction of cherry trees." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
 
