@@ -1,5 +1,5 @@
 # 🌿 TomatoPGT Tools — CloudSeg + CloudGraph
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.18651881)
 ###     Organ-Level Digital Twin Modeling from 3D Tomato Plant Point Clouds
 <p align="center"> <img src="figures/images/TomatoPGT_Pipeline.png" width="95%"> </p>
 
@@ -501,7 +501,7 @@ Nethala, P. (2026). *TomatoPGT Tools (Binary Release): CloudSeg + CloudGraph*. Z
 IsSupplementTo
 @article{TomatoPGT2026,
   title   = {TomatoPGT: A 3D point cloud dataset of tomato plants for segmentation and plant-trait extraction},
-  author  = {Nethala, Prasad et al.},
+  authors  = {Nethala, Prasad et al.},
   journal = {Data in Brief},
   year    = {2026}
 }
