@@ -1,5 +1,5 @@
 # 🌿 TomatoPGT Tools — CloudSeg + CloudGraph
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
 ###     Organ-Level Digital Twin Modeling from 3D Tomato Plant Point Clouds
 <p align="center"> <img src="figures/images/TomatoPGT_Pipeline.png" width="95%"> </p>
 

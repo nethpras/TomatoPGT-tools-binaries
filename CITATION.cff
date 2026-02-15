@@ -28,20 +28,16 @@ keywords:
 
 license: MIT
 
-# Put the release version tag you plan to publish on GitHub (and Zenodo)
-version: "1.0.0"
-date-released: "2026-02-12"
-# doi: "10.5281/zenodo.XXXXXXXX"
-# identifiers:
-#   - type: doi
-#     value: "10.5281/zenodo.XXXXXXXX"
-#     description: "Zenodo concept DOI"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.18651881"
+    description: "Zenodo concept DOI"
 
-# preferred-citation:
-#   type: article
-#   title: "<Your Data in Brief article title>"
-#   authors:
-#     - family-names: "Nethala"
-#       given-names: "Prasad"
-#   year: 2026
-#   doi: "<ARTICLE_DOI>"
+preferred-citation:
+  type: article
+  title: "TomatoPGT Tools (Binary Release): CloudSeg and CloudGraph for Organ-Level Digital Twin Modeling of Tomato Plants from 3D Point Clouds"
+  authors:
+    - family-names: "Nethala"
+      given-names: "Prasad"
+  year: 2026
+  doi: "10.5281/zenodo.18651881"
