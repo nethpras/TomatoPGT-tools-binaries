@@ -501,7 +501,7 @@ Nethala, P. (2026). *TomatoPGT Tools (Binary Release): CloudSeg + CloudGraph*. Z
 IsSupplementTo
 @article{TomatoPGT2026,
   title   = {TomatoPGT: A 3D point cloud dataset of tomato plants for segmentation and plant-trait extraction},
-  authors  = {Nethala, Prasad et al.},
+  authors  = {Prasad Nethala, Dugan Um, Samantha McCoy, Seth Gibson, Mahendra Bhandari, Kiju Lee},
   journal = {Data in Brief},
   year    = {2026}
 }
